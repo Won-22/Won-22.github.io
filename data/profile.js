@@ -9,7 +9,7 @@ window.PORTFOLIO.profile = {
   wordmark: "Won",
   name: { ko: "원", en: "Won" },
   role: { ko: "FDE 지망 개발자", en: "Aspiring Forward Deployed Engineer" },
-  location: { ko: "서울", en: "Seoul, Korea" },
+  location: { ko: "대전", en: "Daejeon, Korea" },
 
   // 첫 화면 왼쪽 위 한 문장
   pitch: {
@@ -26,12 +26,12 @@ window.PORTFOLIO.profile = {
 
   // 소개 문단 (About)
   about: {
-    ko: "AI 에이전트를 실제 문제에 붙이는 일을 합니다. Fit Log에서 기획, 판정 규칙, 평가 설계와 운영은 제가 했고, 코드는 Claude Code 에이전트와 함께 썼습니다. 어디를 AI에게 맡기고 어디를 규칙과 숫자로 묶을지 정하는 것이 제 일의 중심입니다.",
-    en: "I put AI agents to work on real problems. On Fit Log I did the scoping, the decision rules and the evaluation design and runs; I wrote the code together with Claude Code agents. Deciding what to hand to the model and what to pin down with rules and numbers is the centre of how I work."
+    ko: "AI 에이전트로 실제 문제를 푸는 개발자입니다. Fit Log는 기획부터 판정 규칙, 평가까지 직접 설계했고, 코드는 Claude Code와 함께 짰습니다. AI에게 맡길 부분과 규칙으로 정해 둘 부분을 나누는 일을 가장 중요하게 생각합니다.",
+    en: "I build with AI agents to solve real problems. On Fit Log I designed everything from the scope to the decision rules and the evaluation, and wrote the code together with Claude Code. What I care about most is deciding which parts to hand to the model and which to pin down with rules."
   },
   facts: [
     { label: { ko: "지원 분야", en: "Looking for" }, value: { ko: "Forward Deployed Engineer", en: "Forward Deployed Engineer" } },
-    { label: { ko: "기반", en: "Based in" }, value: { ko: "서울", en: "Seoul, Korea" } },
+    { label: { ko: "기반", en: "Based in" }, value: { ko: "대전", en: "Daejeon, Korea" } },
     { label: { ko: "언어", en: "Languages" }, value: { ko: "한국어", en: "Korean" } }
   ],
 
