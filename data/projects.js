@@ -17,13 +17,13 @@ window.PORTFOLIO.projects = [
     },
     role: { ko: "기획 · 판정 규칙 · 평가 설계와 운영 · 배포", en: "Scoping · decision rules · evaluation · deployment" },
     // 큰 사진과 작은 사진. 홈 화면 블록에 쓰여요.
-    image: "assets/img/result-price.jpg",
-    imageAlt: { ko: "Fit Log 판정 화면: 가격 3곳 비교와 추천 사이즈 M", en: "Fit Log verdict screen: three prices compared and size M recommended" },
-    thumb: "assets/img/result-weather.jpg",
-    thumbAlt: { ko: "Fit Log 오늘 날씨 판정과 비슷한 옷", en: "Fit Log weather check and similar items" },
+    image: "assets/img/real/verdict.jpg",
+    imageAlt: { ko: "Fit Log 판정 화면: 가격 2곳 비교, 추천 사이즈 L, 오늘 날씨", en: "Fit Log verdict: two prices compared, size L recommended, today's weather" },
+    thumb: "assets/img/real/size.jpg",
+    thumbAlt: { ko: "Fit Log 사이즈 판정: 사이즈표와 추천 근거", en: "Fit Log size check: size chart and the reasons" },
     links: [
       { label: { ko: "사례 읽기", en: "Read the case" }, url: "project.html?id=fitlog" },
-      { label: { ko: "데모 열기", en: "Open the demo" }, url: "https://salkka.vercel.app" }
+      { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" }
     ]
   }
 ];

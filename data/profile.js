@@ -9,7 +9,7 @@ window.PORTFOLIO.profile = {
   wordmark: "Won",
   name: { ko: "원", en: "Won" },
   role: { ko: "FDE 지망 개발자", en: "Aspiring Forward Deployed Engineer" },
-  location: { ko: "서울", en: "Seoul, Korea" },
+  location: { ko: "대전", en: "Daejeon, Korea" },
 
   // 첫 화면 왼쪽 위 한 문장
   pitch: {
@@ -26,12 +26,12 @@ window.PORTFOLIO.profile = {
 
   // 소개 문단 (About)
   about: {
-    ko: "AI 에이전트를 실제 문제에 붙이는 일을 합니다. Fit Log에서 기획, 판정 규칙, 평가 설계와 운영은 제가 했고, 코드는 Claude Code 에이전트와 함께 썼습니다. 어디를 AI에게 맡기고 어디를 규칙과 숫자로 묶을지 정하는 것이 제 일의 중심입니다.",
-    en: "I put AI agents to work on real problems. On Fit Log I did the scoping, the decision rules and the evaluation design and runs; I wrote the code together with Claude Code agents. Deciding what to hand to the model and what to pin down with rules and numbers is the centre of how I work."
+    ko: "일상에서 불편하거나 시간과 손이 많이 가는 일을 AI로 하나씩 고쳐 가고 있습니다. 처음엔 저만 불편한 줄 알았는데, 주변에 물어보면 다들 같은 불편을 겪고 있는 경우가 많았습니다. Fit\u00a0Log도 옷을 살 때마다 겪던 그런 불편에서 시작했습니다. AI에게 맡기는 데서 그치지 않고 프로그래밍 언어도 함께 공부하며, 만들 줄만 아는 사람이 아니라 코드를 읽고 설명할 줄 아는 개발자가 되려고 합니다.",
+    en: "I use AI to fix the small frictions in everyday life: the things that annoy me or eat up time and effort. Each one started as my own problem, and when I asked around, it usually turned out everyone else had it too. Fit\u00a0Log began that way, with buying clothes. I don't stop at handing work to AI; I'm also studying programming languages, so that I can read and explain the code, not just ship it."
   },
   facts: [
     { label: { ko: "지원 분야", en: "Looking for" }, value: { ko: "Forward Deployed Engineer", en: "Forward Deployed Engineer" } },
-    { label: { ko: "기반", en: "Based in" }, value: { ko: "서울", en: "Seoul, Korea" } },
+    { label: { ko: "기반", en: "Based in" }, value: { ko: "대전", en: "Daejeon, Korea" } },
     { label: { ko: "언어", en: "Languages" }, value: { ko: "한국어", en: "Korean" } }
   ],
 

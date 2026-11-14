@@ -25,10 +25,10 @@ window.PORTFOLIO.caseStudies.fitlog = {
     { label: { ko: "서버비", en: "Hosting cost" }, value: { ko: "한 달 0원", en: "$0 a month" } }
   ],
   links: [
-    { label: { ko: "데모 열기", en: "Open the demo" }, url: "https://salkka.vercel.app" },
+    { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" },
     { label: { ko: "앱 안의 소개 페이지", en: "In-app overview" }, url: "https://salkka.vercel.app/portfolio/" }
   ],
-  hero: "assets/img/home.jpg",
+  hero: "assets/img/real/home.jpg",
   heroAlt: { ko: "Fit Log 홈 화면: 상품 링크 입력 칸과 최근 판정", en: "Fit Log home screen: product link field and recent verdicts" },
 
   sections: [
@@ -46,8 +46,8 @@ window.PORTFOLIO.caseStudies.fitlog = {
           en: "So I narrowed it to two jobs: pick the size from the measurements of clothes that already fit, and make new clothes wearable with outfits from my own wardrobe. Commercial launch was cut from scope: an app for fewer than ten people, with the time spent on design and evaluation."
         }
       ],
-      aside: "assets/img/result-price.jpg",
-      asideAlt: { ko: "가격 3곳과 추천 사이즈 화면", en: "Three prices and the recommended size" }
+      aside: "assets/img/real/verdict.jpg",
+      asideAlt: { ko: "판정 화면: 가격 2곳, 추천 사이즈, 오늘 날씨", en: "Verdict: two prices, recommended size, today's weather" }
     },
     {
       type: "timeline",
@@ -149,12 +149,15 @@ window.PORTFOLIO.caseStudies.fitlog = {
       type: "gallery",
       id: "screens",
       heading: { ko: "실제 앱 화면", en: "The real app" },
-      note: { ko: "데모 계정의 예시 데이터로 찍었어요.", en: "Captured with the demo account's sample data." },
+      note: { ko: "제가 실제로 쓰는 계정의 화면이에요. 쇼핑몰 상품 사진과 체형 숫자는 흐리게 처리했어요.", en: "Screens from my own account. Store product photos and body numbers are blurred." },
       images: [
-        { src: "assets/img/home.jpg", alt: { ko: "홈: 상품 링크 입력", en: "Home: paste a product link" } },
-        { src: "assets/img/result-price.jpg", alt: { ko: "판정: 가격과 사이즈", en: "Verdict: price and size" } },
-        { src: "assets/img/result-weather.jpg", alt: { ko: "판정: 오늘 날씨와 비슷한 옷", en: "Verdict: weather and similar items" } },
-        { src: "assets/img/result-coordi.jpg", alt: { ko: "판정: 내 옷장 코디", en: "Verdict: outfits from my wardrobe" } }
+        { src: "assets/img/real/home.jpg", alt: { ko: "홈: 링크를 넣거나 기준을 골라 추천받기", en: "Home: paste a link or pick a way to get picks" } },
+        { src: "assets/img/real/verdict.jpg", alt: { ko: "판정: 가격 2곳, 예산, 오늘 날씨", en: "Verdict: two prices, budget, today's weather" } },
+        { src: "assets/img/real/size.jpg", alt: { ko: "사이즈: 내 옷장 실측으로 고른 L과 근거", en: "Size: L picked from my wardrobe's measurements" } },
+        { src: "assets/img/real/coordi.jpg", alt: { ko: "코디: 내 옷장 옷으로 만든 3벌", en: "Outfits: three looks from my own wardrobe" } },
+        { src: "assets/img/real/research.jpg", alt: { ko: "조사: 무엇을 볼지 고르기", en: "Research: choose what to check" } },
+        { src: "assets/img/real/recommend.jpg", alt: { ko: "추천받기: 기준과 예산", en: "Get picks: criteria and budget" } },
+        { src: "assets/img/real/add-item.jpg", alt: { ko: "옷 추가: 링크를 넣으면 Claude가 채워요", en: "Add an item: Claude fills it in from a link" } }
       ]
     }
   ]
