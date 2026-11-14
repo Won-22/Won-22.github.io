@@ -18,7 +18,7 @@ window.PORTFOLIO.profile = {
   },
 
   // 연락처. 비워 두면 그 줄이 숨겨져요.
-  email: "",
+  email: "qntkruruqjs@gmail.com",
   github: "https://github.com/Won-22",
   links: [
     // { label: { ko: "블로그", en: "Blog" }, url: "https://..." }
