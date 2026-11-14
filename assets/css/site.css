@@ -190,7 +190,8 @@ ol, ul { padding: 0; list-style: none; }
 .facts { display: grid; gap: 20px; align-content: start; font-size: var(--step-small); }
 .facts dt { color: var(--muted); }
 .facts dd { font-weight: 600; }
-.about-text { font-size: clamp(20px, 1.7vw, 26px); line-height: 1.45; max-width: 52ch; }
+.about-text { font-size: clamp(20px, 1.7vw, 26px); line-height: 1.75; max-width: 52ch; }
+.about-text p { word-break: keep-all; }
 .about-text h2 { font-size: var(--step-small); font-weight: 700; margin-bottom: 16px; letter-spacing: 0; line-height: 1.4; }
 .records { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 64px; font-size: var(--step-small); }
 .records h3 { font-size: var(--step-small); font-weight: 700; margin-bottom: 12px; }

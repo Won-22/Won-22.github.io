@@ -26,8 +26,8 @@ window.PORTFOLIO.profile = {
 
   // 소개 문단 (About)
   about: {
-    ko: "일상에서 불편하거나 시간과 손이 많이 가는 일을 AI로 하나씩 고쳐 가고 있습니다. Fit Log도 옷을 살 때마다 겪던 불편에서 시작했습니다. AI에게 맡기는 데서 그치지 않고 프로그래밍 언어도 함께 공부하며, 만들 줄만 아는 사람이 아니라 코드를 읽고 설명할 줄 아는 개발자가 되려고 합니다.",
-    en: "I use AI to fix the small frictions in everyday life: the things that annoy me or eat up time and effort. Fit Log started from one of them, buying clothes. I don't stop at handing work to AI; I'm also studying programming languages, so that I can read and explain the code, not just ship it."
+    ko: "일상에서 불편하거나 시간과 손이 많이 가는 일을 AI로 하나씩 고쳐 가고 있습니다. 처음엔 저만 불편한 줄 알았는데, 주변에 물어보면 다들 같은 불편을 겪고 있는 경우가 많았습니다. Fit\u00a0Log도 옷을 살 때마다 겪던 그런 불편에서 시작했습니다. AI에게 맡기는 데서 그치지 않고 프로그래밍 언어도 함께 공부하며, 만들 줄만 아는 사람이 아니라 코드를 읽고 설명할 줄 아는 개발자가 되려고 합니다.",
+    en: "I use AI to fix the small frictions in everyday life: the things that annoy me or eat up time and effort. Each one started as my own problem, and when I asked around, it usually turned out everyone else had it too. Fit\u00a0Log began that way, with buying clothes. I don't stop at handing work to AI; I'm also studying programming languages, so that I can read and explain the code, not just ship it."
   },
   facts: [
     { label: { ko: "지원 분야", en: "Looking for" }, value: { ko: "Forward Deployed Engineer", en: "Forward Deployed Engineer" } },
