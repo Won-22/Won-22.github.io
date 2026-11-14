@@ -92,7 +92,7 @@
     footInvite: { ko: "같이 풀 문제를\n찾고 있어요", en: "Bring me\na real problem" },
     footBtnMail: { ko: "이메일 보내기", en: "Send an email" },
     footBtnGit: { ko: "GitHub 보기", en: "See GitHub" },
-    legal: { ko: "앱 화면은 Fit Log 데모 계정의 예시 데이터예요.", en: "App screens show the Fit Log demo account's sample data." },
+    legal: { ko: "앱 화면은 실제 사용 화면이며, 쇼핑몰 상품 사진은 흐리게 처리했어요.", en: "App screens are real usage; store product photos are blurred." },
     built: { ko: "HTML·CSS·JS로 직접 만든 사이트", en: "Hand-built in HTML, CSS and JS" },
     backHome: { ko: "← 처음으로", en: "← Home" },
     notFound: { ko: "이 프로젝트를 찾지 못했어요.", en: "Project not found." },
@@ -246,7 +246,7 @@
     nameRow.appendChild(h1);
     hero.appendChild(nameRow);
     if (first) {
-      var shot = el("figure", { class: "hero-shot" }, [el("img", { src: "assets/img/home.jpg", alt: t({ ko: "Fit Log 홈 화면", en: "Fit Log home screen" }), width: "780", height: "1500" })]);
+      var shot = el("figure", { class: "hero-shot" }, [el("img", { src: "assets/img/real/home.jpg", alt: t({ ko: "Fit Log 홈 화면", en: "Fit Log home screen" }) })]);
       hero.appendChild(shot);
     }
     var bottom = el("div", { class: "hero-bottom" });
@@ -265,8 +265,8 @@
     intro.appendChild(stairs);
     var pics = el("div", { class: "intro-pics" });
     if (first) {
-      pics.appendChild(rise(el("img", { src: first.thumb, alt: t(first.thumbAlt), width: "780", height: "1500", loading: "lazy" }), 2));
-      pics.appendChild(rise(el("img", { src: "assets/img/result-coordi.jpg", alt: t({ ko: "Fit Log 내 옷장 코디 화면", en: "Fit Log outfits from my wardrobe" }), width: "780", height: "1500", loading: "lazy" }), 3));
+      pics.appendChild(rise(el("img", { src: first.thumb, alt: t(first.thumbAlt), loading: "lazy" }), 2));
+      pics.appendChild(rise(el("img", { src: "assets/img/real/coordi.jpg", alt: t({ ko: "Fit Log 내 옷장 코디 화면", en: "Fit Log outfits from my wardrobe" }), loading: "lazy" }), 3));
     }
     intro.appendChild(pics);
     intro.appendChild(el("p", { class: "intro-note", text: t(UI.introNote) }));
@@ -276,10 +276,10 @@
     var work = el("section", { class: "work", id: "work", "aria-label": t(UI.work) });
     projects.forEach(function (p) {
       var block = el("article", { class: "project" });
-      var vis = el("a", { class: "project-visual", href: withLang("project.html?id=" + p.id), "aria-label": t(p.title) }, [el("img", { src: p.image, alt: t(p.imageAlt), width: "780", height: "1500", loading: "lazy" })]);
+      var vis = el("a", { class: "project-visual", href: withLang("project.html?id=" + p.id), "aria-label": t(p.title) }, [el("img", { src: p.image, alt: t(p.imageAlt), loading: "lazy" })]);
       block.appendChild(vis);
       var cl = el("div", { class: "project-cluster" });
-      if (p.thumb) cl.appendChild(rise(el("img", { class: "thumb", src: p.thumb, alt: t(p.thumbAlt), width: "780", height: "1500", loading: "lazy" }), 0));
+      if (p.thumb) cl.appendChild(rise(el("img", { class: "thumb", src: p.thumb, alt: t(p.thumbAlt), loading: "lazy" }), 0));
       var tx = el("div", { class: "project-text" });
       tx.appendChild(rise(el("h2", { text: t(p.title) }), 1));
       var desc = el("div");
@@ -433,7 +433,7 @@
       (c.links || []).forEach(function (l) { hl.appendChild(linkEl(t(l.label), l.url)); });
       ht.appendChild(rise(hl, 2));
       hero.appendChild(ht);
-      if (c.hero) hero.appendChild(el("figure", { class: "case-hero-pic" }, [el("img", { src: c.hero, alt: t(c.heroAlt), width: "780", height: "1500" })]));
+      if (c.hero) hero.appendChild(el("figure", { class: "case-hero-pic" }, [el("img", { src: c.hero, alt: t(c.heroAlt) })]));
       main.appendChild(hero);
       var facts = el("dl", { class: "case-facts" });
       (c.facts || []).forEach(function (f, i) { facts.appendChild(rise(el("div", {}, [el("dt", { text: t(f.label) }), el("dd", { text: t(f.value) })]), i)); });
@@ -460,7 +460,7 @@
       var body = el("div", { class: "body" }, [h]);
       (s.paragraphs || []).forEach(function (p, i) { body.appendChild(rise(el("p", { text: t(p) }), i + 1)); });
       sec.appendChild(body);
-      if (s.aside) sec.appendChild(rise(el("figure", { class: "aside" }, [el("img", { src: s.aside, alt: t(s.asideAlt), width: "780", height: "1500", loading: "lazy" })]), 2));
+      if (s.aside) sec.appendChild(rise(el("figure", { class: "aside" }, [el("img", { src: s.aside, alt: t(s.asideAlt), loading: "lazy" })]), 2));
       return sec;
     }
     sec.appendChild(h);
@@ -503,7 +503,7 @@
       sec.appendChild(pts);
     } else if (s.type === "gallery") {
       var g = el("div", { class: "gallery" });
-      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), width: "780", height: "1500", loading: "lazy" }), el("figcaption", { text: t(im.alt) })]), i)); });
+      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), loading: "lazy" }), el("figcaption", { text: t(im.alt) })]), i)); });
       sec.appendChild(g);
       if (s.note) sec.appendChild(el("p", { class: "gallery-note", text: t(s.note) }));
     }
