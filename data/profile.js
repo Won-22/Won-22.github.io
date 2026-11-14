@@ -26,8 +26,8 @@ window.PORTFOLIO.profile = {
 
   // 소개 문단 (About)
   about: {
-    ko: "AI 에이전트로 실제 문제를 푸는 개발자입니다. Fit Log는 기획부터 판정 규칙, 평가까지 직접 설계했고, 코드는 Claude Code와 함께 짰습니다. AI에게 맡길 부분과 규칙으로 정해 둘 부분을 나누는 일을 가장 중요하게 생각합니다.",
-    en: "I build with AI agents to solve real problems. On Fit Log I designed everything from the scope to the decision rules and the evaluation, and wrote the code together with Claude Code. What I care about most is deciding which parts to hand to the model and which to pin down with rules."
+    ko: "일상에서 불편하거나 시간과 손이 많이 가는 일을 AI로 하나씩 고쳐 가고 있습니다. Fit Log도 옷을 살 때마다 겪던 불편에서 시작했습니다. AI에게 맡기는 데서 그치지 않고 프로그래밍 언어도 함께 공부하며, 만들 줄만 아는 사람이 아니라 코드를 읽고 설명할 줄 아는 개발자가 되려고 합니다.",
+    en: "I use AI to fix the small frictions in everyday life: the things that annoy me or eat up time and effort. Fit Log started from one of them, buying clothes. I don't stop at handing work to AI; I'm also studying programming languages, so that I can read and explain the code, not just ship it."
   },
   facts: [
     { label: { ko: "지원 분야", en: "Looking for" }, value: { ko: "Forward Deployed Engineer", en: "Forward Deployed Engineer" } },
