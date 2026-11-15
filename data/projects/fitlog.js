@@ -79,9 +79,9 @@ window.PORTFOLIO.caseStudies.fitlog = {
         {
           name: { ko: "공통", en: "Shared" },
           boxes: [
-            { ko: "판정 규칙 한 장 (모든 에이전트가 먼저 읽음)", en: "One rulebook every agent reads first" },
-            { ko: "MCP 서버: 도구 7개, 지우는 도구 없음", en: "MCP server: 7 tools, none that delete" },
-            { ko: "Supabase (본인 줄만 읽고 쓰기, RLS)", en: "Supabase with row-level security" }
+            { ko: "판정 규칙 한 장", en: "One rulebook" },
+            { ko: "MCP 서버: 도구 7개", en: "MCP server: 7 tools" },
+            { ko: "Supabase", en: "Supabase" }
           ]
         }
       ]
