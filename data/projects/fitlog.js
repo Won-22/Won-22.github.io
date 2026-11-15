@@ -110,10 +110,10 @@ window.PORTFOLIO.caseStudies.fitlog = {
       id: "decisions",
       heading: { ko: "이렇게 정했고, 이건 뺐어요", en: "Decisions and cuts" },
       items: [
-        { title: { ko: "출처 없는 정보는 보여 주지 않아요", en: "No source, no claim" }, body: { ko: "링크 없는 가격·상품·사진은 넣지 않고 \"확인 필요\"나 \"찾지 못함: 이유\"로 적어요.", en: "Prices, products or photos without a link are left out and marked 'needs checking' or 'not found: reason'." } },
-        { title: { ko: "외부 AI에는 필요한 것만", en: "Send the model only what it needs" }, body: { ko: "제 계정과 MCP 서버는 Gemini에 상품 주소와 고정 질문만 보내요. 친구 엔진은 동의를 받고 판정에 필요한 체형 숫자만 보내요.", en: "My account and the MCP server send Gemini only the product URL and a fixed question. The friends' engine sends body measurements only, with consent." } },
-        { title: { ko: "결과를 흔드는 곳은 뺐어요", en: "Removed what made results unstable" }, body: { ko: "같은 상품을 두 번 조사하면 종합몰 최저가가 결과를 가장 많이 흔들었어요. 옷은 무신사, 신발은 크림을 먼저 보게 고정했어요.", en: "Running the same product twice, general marketplaces caused most of the drift. Clothing now checks one fashion store first, shoes one sneaker store." } },
-        { title: { ko: "\"사지 마세요\"도 정답이에요", en: "'Don't buy it' is a valid answer" }, body: { ko: "쇼핑몰이 아니라서, 안 맞거나 비슷한 옷이 이미 있으면 그렇게 말해요.", en: "It is not a shop, so when it won't fit or you own something similar, it says so." } }
+        { title: { ko: "출처 없는 정보는 보여 주지 않아요", en: "No source, no claim" } },
+        { title: { ko: "외부 AI에는 필요한 것만", en: "Send the model only what it needs" } },
+        { title: { ko: "같은 질문엔 같은 답이 나오게", en: "Same question, same answer" } },
+        { title: { ko: "\"사지 마세요\"도 정답이에요", en: "'Don't buy it' is a valid answer" } }
       ]
     },
     {

@@ -492,7 +492,7 @@
       if (s.agentNote) sec.appendChild(rise(el("p", { class: "agent-note", text: t(s.agentNote) }), 0));
     } else if (s.type === "points") {
       var pts = el("div", { class: "points" });
-      s.items.forEach(function (it, i) { pts.appendChild(rise(el("div", {}, [el("h3", { text: t(it.title) }), el("p", { text: t(it.body) })]), i)); });
+      s.items.forEach(function (it, i) { var kids = [el("h3", { text: t(it.title) })]; if (it.body) kids.push(el("p", { text: t(it.body) })); pts.appendChild(rise(el("div", {}, kids), i)); });
       sec.appendChild(pts);
     } else if (s.type === "gallery") {
       var g = el("div", { class: "gallery" });
