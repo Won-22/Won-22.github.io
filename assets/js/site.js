@@ -245,12 +245,6 @@
       var shot = el("figure", { class: "hero-shot" }, [el("img", { src: "assets/img/real/home.jpg", alt: t({ ko: "Fit Log 홈 화면", en: "Fit Log home screen" }) })]);
       hero.appendChild(shot);
     }
-    var bottom = el("div", { class: "hero-bottom" });
-    var bnav = el("nav", { "aria-label": "Sections" }, [
-      linkEl(t(UI.work), "#work"), linkEl(t(UI.how), "#how"), linkEl(t(UI.contact), "#contact")
-    ]);
-    bottom.appendChild(bnav);
-    hero.appendChild(bottom);
     main.appendChild(hero);
 
     // 계단 문장
