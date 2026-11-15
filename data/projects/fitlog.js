@@ -71,9 +71,9 @@ window.PORTFOLIO.caseStudies.fitlog = {
         {
           name: { ko: "에이전트 팀", en: "Agent team" },
           boxes: [
-            { ko: "총괄 (Opus) · 일을 나누고 기록", en: "Lead (Opus): splits work, writes results" },
-            { ko: "가격 · 대안 (Haiku)", en: "Price, alternatives (Haiku)" },
-            { ko: "핏 · 코디 · 추천 · 리서치 (Sonnet)", en: "Fit, outfits, picks, research (Sonnet)" }
+            { ko: "총괄: 일을 나누고 기록", en: "Lead: splits work, writes results" },
+            { ko: "가격 · 대안", en: "Price, alternatives" },
+            { ko: "핏 · 코디 · 추천 · 리서치", en: "Fit, outfits, picks, research" }
           ]
         },
         {
