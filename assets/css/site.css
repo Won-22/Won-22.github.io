@@ -77,7 +77,8 @@ ol, ul { padding: 0; list-style: none; }
 .textlink { text-decoration: underline; text-decoration-thickness: 1px; transition: color .2s var(--ease); }
 .textlink:hover { color: var(--accent); }
 
-.lang-toggle { background: none; border: 0; padding: 4px 0; font: inherit; color: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.lang-toggle { background: none; border: 0; padding: 0; margin: 0; font: inherit; line-height: inherit; letter-spacing: inherit; color: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+.lang-toggle:hover { text-decoration-thickness: 2px; }
 .lang-toggle:hover { color: var(--accent); }
 
 /* ---------- Hero: name across the middle ---------- */
@@ -89,7 +90,7 @@ ol, ul { padding: 0; list-style: none; }
 .hero-bottom { align-items: flex-end; font-size: var(--step-small); }
 .hero-pitch { max-width: 30ch; font-size: var(--step-lead); line-height: 1.35; font-weight: 500; }
 .hero-pitch + .btn { margin-top: 16px; }
-.hero-nav { display: flex; gap: 20px; font-size: var(--step-small); }
+.hero-nav { display: flex; align-items: baseline; gap: 20px; font-size: var(--step-small); }
 .hero-name { display: flex; align-items: center; }
 .hero-name h1 { width: 100%; }
 .wordmark { display: block; width: 100%; height: auto; fill: currentColor; overflow: visible; }

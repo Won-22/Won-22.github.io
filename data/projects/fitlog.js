@@ -20,13 +20,10 @@ window.PORTFOLIO.caseStudies.fitlog = {
   },
   facts: [
     { label: { ko: "기간", en: "Period" }, value: { ko: "2026년 10월 21일 – 지금", en: "21 Oct 2026 – now" } },
-    { label: { ko: "역할", en: "Role" }, value: { ko: "1인: 기획, 규칙, 평가, 배포. 코드는 Claude Code와 함께", en: "Solo: scoping, rules, evaluation, deployment. Code written with Claude Code" } },
-    { label: { ko: "버전", en: "Releases" }, value: { ko: "116개 (v0.74.1)", en: "116 (v0.74.1)" } },
-    { label: { ko: "서버비", en: "Hosting cost" }, value: { ko: "한 달 0원", en: "$0 a month" } }
+    { label: { ko: "역할", en: "Role" }, value: { ko: "1인 기획", en: "Solo planning" } }
   ],
   links: [
-    { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" },
-    { label: { ko: "앱 안의 소개 페이지", en: "In-app overview" }, url: "https://salkka.vercel.app/portfolio/" }
+    { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" }
   ],
   hero: "assets/img/real/home.jpg",
   heroAlt: { ko: "Fit Log 홈 화면: 상품 링크 입력 칸과 최근 판정", en: "Fit Log home screen: product link field and recent verdicts" },
@@ -42,8 +39,8 @@ window.PORTFOLIO.caseStudies.fitlog = {
           en: "Buying clothes left three regrets: it didn't fit, it was cheaper elsewhere, and I had nothing to wear it with. The same wide trousers measure differently by brand, and the model in the photo is not me."
         },
         {
-          ko: "그래서 주인공을 둘로 좁혔어요. 내 옷장의 딱 맞는 옷 실측으로 고르는 사이즈, 그리고 산 옷을 실제로 입게 만드는 코디. 상용화는 범위에서 뺐어요. 10명 미만이 쓰는 앱으로 좁히고 설계와 평가에 시간을 썼어요.",
-          en: "So I narrowed it to two jobs: pick the size from the measurements of clothes that already fit, and make new clothes wearable with outfits from my own wardrobe. Commercial launch was cut from scope: an app for fewer than ten people, with the time spent on design and evaluation."
+          ko: "그래서 주인공을 둘로 좁혔어요. 내 옷장의 딱 맞는 옷 실측으로 고르는 사이즈, 그리고 산 옷을 실제로 입게 만드는 코디. 상용화는 범위에서 뺐어요.",
+          en: "So I narrowed it to two jobs: pick the size from the measurements of clothes that already fit, and make new clothes wearable with outfits from my own wardrobe. Commercial launch was cut from scope."
         }
       ],
       aside: "assets/img/real/verdict.jpg",
@@ -53,10 +50,6 @@ window.PORTFOLIO.caseStudies.fitlog = {
       type: "timeline",
       id: "timeline",
       heading: { ko: "24일 동안 한 일", en: "Twenty-four days" },
-      intro: {
-        ko: "첫 업로드부터 배포는 하루 만에, 친구용 엔진은 사흘 만에 붙였어요. 그 뒤는 대부분 재고 고치는 시간이었어요.",
-        en: "The first deploy took a day and the friends' engine three. Most of the time after that went into measuring and fixing."
-      },
       steps: [
         { date: { ko: "10월 21일", en: "21 Oct" }, title: { ko: "문제 좁히기", en: "Scope" }, body: { ko: "후회 세 가지 정리, 사이즈·코디 두 기능으로 좁힘", en: "Three regrets written down, cut to size and outfits" } },
         { date: { ko: "10월 22일", en: "22 Oct" }, title: { ko: "첫 배포", en: "First deploy" }, body: { ko: "v0.1. 에이전트 지침, 판정 규칙 한 장, 앱 화면, Vercel 자동 배포", en: "v0.1: agent instructions, a one-page rulebook, the app, auto-deploy on Vercel" } },
