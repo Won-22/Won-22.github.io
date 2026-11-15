@@ -20,9 +20,7 @@ window.PORTFOLIO.caseStudies.fitlog = {
   },
   facts: [
     { label: { ko: "기간", en: "Period" }, value: { ko: "2026년 10월 21일 – 지금", en: "21 Oct 2026 – now" } },
-    { label: { ko: "역할", en: "Role" }, value: { ko: "1인: 기획, 규칙, 평가, 배포. 코드는 Claude Code와 함께", en: "Solo: scoping, rules, evaluation, deployment. Code written with Claude Code" } },
-    { label: { ko: "버전", en: "Releases" }, value: { ko: "116개 (v0.74.1)", en: "116 (v0.74.1)" } },
-    { label: { ko: "서버비", en: "Hosting cost" }, value: { ko: "한 달 0원", en: "$0 a month" } }
+    { label: { ko: "역할", en: "Role" }, value: { ko: "1인 기획", en: "Solo planning" } }
   ],
   links: [
     { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" }
