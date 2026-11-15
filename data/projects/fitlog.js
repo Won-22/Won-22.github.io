@@ -56,7 +56,7 @@ window.PORTFOLIO.caseStudies.fitlog = {
         { date: { ko: "10월 23일", en: "23 Oct" }, title: { ko: "남이 쓸 수 있게", en: "Usable by others" }, body: { ko: "로그인 구현, 쇼핑몰 읽기 성공, 서버 엔진 구축", en: "Built login, got store pages reading, set up the server engine" } },
         { date: { ko: "11월 4일", en: "4 Nov" }, title: { ko: "도구로 묶고 재기", en: "Package and measure" }, body: { ko: "사이즈 규칙 평가, MCP 연결", en: "Size rule evaluation, MCP connection" } },
         { date: { ko: "11월 5일", en: "5 Nov" }, title: { ko: "기준선과 비교", en: "Against a baseline" }, body: { ko: "사이즈 규칙 정형화", en: "Formalised the size rules" } },
-        { date: { ko: "11월 14일", en: "14 Nov" }, title: { ko: "지금", en: "Now" }, body: { ko: "v0.74.1, 116개 버전, 자동 시험 70개 이상이 PR마다 돌아요", en: "v0.74.1, 116 releases, 70+ automated tests on every pull request" } }
+        { date: { ko: "11월 14일", en: "14 Nov" }, title: { ko: "지금", en: "Now" }, body: { ko: "사용하며 계속 다듬는 중", en: "Still improving it as I use it" } }
       ]
     },
     {
