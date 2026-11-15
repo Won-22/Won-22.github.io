@@ -130,7 +130,6 @@ window.PORTFOLIO.caseStudies.fitlog = {
       type: "gallery",
       id: "screens",
       heading: { ko: "실제 앱 화면", en: "The real app" },
-      note: { ko: "제가 실제로 쓰는 계정의 화면이에요. 쇼핑몰 상품 사진과 체형 숫자는 흐리게 처리했어요.", en: "Screens from my own account. Store product photos and body numbers are blurred." },
       images: [
         { src: "assets/img/real/home.jpg", alt: { ko: "홈: 링크를 넣거나 기준을 골라 추천받기", en: "Home: paste a link or pick a way to get picks" } },
         { src: "assets/img/real/verdict.jpg", alt: { ko: "판정: 가격 2곳, 예산, 오늘 날씨", en: "Verdict: two prices, budget, today's weather" } },
