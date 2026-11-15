@@ -25,8 +25,7 @@ window.PORTFOLIO.caseStudies.fitlog = {
     { label: { ko: "서버비", en: "Hosting cost" }, value: { ko: "한 달 0원", en: "$0 a month" } }
   ],
   links: [
-    { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" },
-    { label: { ko: "앱 안의 소개 페이지", en: "In-app overview" }, url: "https://salkka.vercel.app/portfolio/" }
+    { label: { ko: "앱 열기", en: "Open the app" }, url: "https://salkka.vercel.app" }
   ],
   hero: "assets/img/real/home.jpg",
   heroAlt: { ko: "Fit Log 홈 화면: 상품 링크 입력 칸과 최근 판정", en: "Fit Log home screen: product link field and recent verdicts" },
