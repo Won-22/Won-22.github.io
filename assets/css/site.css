@@ -285,9 +285,8 @@ a.contact-row:hover .go { transform: translateX(8px); }
 .points p { margin-top: 10px; max-width: 48ch; }
 .cs.limits { }
 .gallery { margin-top: 48px; columns: 3; column-gap: 16px; }
-.gallery figure { break-inside: avoid; margin: 0 0 24px; }
+.gallery figure { break-inside: avoid; margin: 0 0 16px; }
 .gallery img { width: 100%; height: auto; border-radius: 6px; background: var(--surface); }
-.gallery figcaption { font-size: var(--step-small); padding: 10px 2px 0; }
 .gallery-note { margin-top: 16px; font-size: var(--step-small); color: var(--muted); }
 .next-case { margin-top: var(--gap-section); }
 

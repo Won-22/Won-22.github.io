@@ -496,7 +496,7 @@
       sec.appendChild(pts);
     } else if (s.type === "gallery") {
       var g = el("div", { class: "gallery" });
-      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), loading: "lazy" }), el("figcaption", { text: t(im.alt) })]), i)); });
+      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), loading: "lazy" })]), i)); });
       sec.appendChild(g);
       if (s.note) sec.appendChild(el("p", { class: "gallery-note", text: t(s.note) }));
     }
