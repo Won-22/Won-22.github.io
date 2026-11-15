@@ -41,7 +41,6 @@
       { ko: "18벌로 재며 고쳐서", en: "shipped it, measured it," },
       { ko: "14벌을 맞혔습니다.", en: "and got 14 of 18 right." }
     ],
-    introNote: { ko: "Fit Log · 2026년 10월 21일 시작 · 1인 프로젝트", en: "Fit Log · started 21 October 2026 · solo project" },
     measureHead: { ko: "규칙을 바꾸고 다시 쟀어요", en: "Change the rule, measure again" },
     measureLead: {
       ko: "옷장에서 옷 한 벌씩 빼고, 나머지로 그 옷의 사이즈를 맞히는 18문제예요. 방법을 골라 보세요.",
@@ -92,8 +91,6 @@
     footInvite: { ko: "같이 풀 문제를\n찾고 있어요", en: "Bring me\na real problem" },
     footBtnMail: { ko: "이메일 보내기", en: "Send an email" },
     footBtnGit: { ko: "GitHub 보기", en: "See GitHub" },
-    legal: { ko: "앱 화면은 실제 사용 화면이며, 쇼핑몰 상품 사진은 흐리게 처리했어요.", en: "App screens are real usage; store product photos are blurred." },
-    built: { ko: "HTML·CSS·JS로 직접 만든 사이트", en: "Hand-built in HTML, CSS and JS" },
     backHome: { ko: "← 처음으로", en: "← Home" },
     notFound: { ko: "이 프로젝트를 찾지 못했어요.", en: "Project not found." },
     otherWork: { ko: "다른 작업 보기", en: "See other work" }
@@ -223,7 +220,7 @@
   function renderHome() {
     var me = P.profile, projects = P.projects || [];
     var main = $("#main"); if (!main || !me) return;
-    document.title = t(me.name) + " · " + t(me.role);
+    document.title = t(me.name) + " · " + t({ ko: "포트폴리오", en: "Portfolio" });
     var first = projects[0];
 
     // 첫 화면
@@ -242,7 +239,6 @@
     var nameRow = el("div", { class: "hero-name" });
     var h1 = el("h1");
     h1.appendChild(wordmark(me.wordmark, t(me.name)));
-    h1.appendChild(el("span", { class: "hero-role", text: t(me.role) }));
     nameRow.appendChild(h1);
     hero.appendChild(nameRow);
     if (first) {
@@ -250,7 +246,6 @@
       hero.appendChild(shot);
     }
     var bottom = el("div", { class: "hero-bottom" });
-    bottom.appendChild(el("p", { text: t(me.location) + " · " + t(me.role) }));
     var bnav = el("nav", { "aria-label": "Sections" }, [
       linkEl(t(UI.work), "#work"), linkEl(t(UI.how), "#how"), linkEl(t(UI.contact), "#contact")
     ]);
@@ -259,7 +254,7 @@
     main.appendChild(hero);
 
     // 계단 문장
-    var intro = el("section", { class: "intro", "aria-label": t(UI.introNote) });
+    var intro = el("section", { class: "intro", "aria-label": "Fit Log" });
     var stairs = el("p", { class: "stairs" });
     UI.intro.forEach(function (line, i) { stairs.appendChild(rise(el("span", { text: t(line) }), i)); });
     intro.appendChild(stairs);
@@ -269,7 +264,6 @@
       pics.appendChild(rise(el("img", { src: "assets/img/real/coordi.jpg", alt: t({ ko: "Fit Log 내 옷장 코디 화면", en: "Fit Log outfits from my wardrobe" }), loading: "lazy" }), 3));
     }
     intro.appendChild(pics);
-    intro.appendChild(el("p", { class: "intro-note", text: t(UI.introNote) }));
     main.appendChild(intro);
 
     // 작업
@@ -284,7 +278,7 @@
       tx.appendChild(rise(el("h2", { text: t(p.title) }), 1));
       var desc = el("div");
       desc.appendChild(el("p", { text: t(p.summary) }));
-      desc.appendChild(el("p", { class: "project-role", text: (p.period ? p.period + " · " : "") + t(p.role) }));
+      if (p.role || p.period) desc.appendChild(el("p", { class: "project-role", text: [p.period, p.role && t(p.role)].filter(Boolean).join(" · ") }));
       tx.appendChild(rise(desc, 2));
       cl.appendChild(tx);
       var links = el("p", { class: "project-links" });
@@ -396,7 +390,6 @@
     top.appendChild(links);
     f.appendChild(top);
     f.appendChild(el("div"));
-    f.appendChild(el("p", { class: "footer-legal" }, [el("span", { text: "© 2026 " + t(me.name) + " · " + t(UI.built) }), el("span", { text: t(UI.legal) })]));
     var mark = el("div", { class: "footer-mark", "aria-hidden": "true" });
     mark.appendChild(wordmark(me.wordmark));
     f.appendChild(mark);
