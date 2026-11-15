@@ -39,8 +39,8 @@ window.PORTFOLIO.caseStudies.fitlog = {
           en: "Buying clothes left three regrets: it didn't fit, it was cheaper elsewhere, and I had nothing to wear it with. The same wide trousers measure differently by brand, and the model in the photo is not me."
         },
         {
-          ko: "그래서 주인공을 둘로 좁혔어요. 내 옷장의 딱 맞는 옷 실측으로 고르는 사이즈, 그리고 산 옷을 실제로 입게 만드는 코디. 상용화는 범위에서 뺐어요. 10명 미만이 쓰는 앱으로 좁히고 설계와 평가에 시간을 썼어요.",
-          en: "So I narrowed it to two jobs: pick the size from the measurements of clothes that already fit, and make new clothes wearable with outfits from my own wardrobe. Commercial launch was cut from scope: an app for fewer than ten people, with the time spent on design and evaluation."
+          ko: "그래서 주인공을 둘로 좁혔어요. 내 옷장의 딱 맞는 옷 실측으로 고르는 사이즈, 그리고 산 옷을 실제로 입게 만드는 코디. 상용화는 범위에서 뺐어요.",
+          en: "So I narrowed it to two jobs: pick the size from the measurements of clothes that already fit, and make new clothes wearable with outfits from my own wardrobe. Commercial launch was cut from scope."
         }
       ],
       aside: "assets/img/real/verdict.jpg",
