@@ -255,13 +255,13 @@ a.contact-row:hover .go { transform: translateX(8px); }
 .timeline .detail { font-size: var(--step-small); margin-top: 6px; }
 .timeline-bar { height: 10px; background: var(--ink); margin-top: 48px; transform-origin: 0 50%; }
 
-.flow { margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.flow { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .lane { background: var(--surface); padding: 24px 20px 28px; position: relative; }
 .lane:nth-child(1) { background: var(--ink); color: var(--bg); }
-.lane:nth-child(4) { background: var(--accent); color: var(--accent-ink); }
+.lane:last-child { background: var(--accent); color: var(--accent-ink); }
 .lane h3 { font-size: var(--step-small); font-weight: 700; margin-bottom: 16px; }
 .lane li { font-size: var(--step-small); line-height: 1.45; padding: 10px 12px; background: rgba(255,255,255,.35); margin-top: 8px; }
-.lane:nth-child(1) li, .lane:nth-child(4) li { background: rgba(255,255,255,.14); }
+.lane:nth-child(1) li, .lane:last-child li { background: rgba(255,255,255,.14); }
 :root[data-theme="dark"] .lane li { background: rgba(255,255,255,.06); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lane li { background: rgba(255,255,255,.06); } }
 .flow-arrows { display: none; }
@@ -318,7 +318,6 @@ a.contact-row:hover .go { transform: translateX(8px); }
   .how-head { grid-column: 1 / 13; }
   .slip { grid-column: 1 / 13; max-width: 520px; }
   .timeline { grid-template-columns: repeat(3, 1fr); }
-  .flow { grid-template-columns: repeat(2, 1fr); }
   .evalsteps { grid-template-columns: repeat(2, 1fr); }
   .gallery { columns: 2; }
   .case-facts { grid-template-columns: repeat(2, 1fr); }

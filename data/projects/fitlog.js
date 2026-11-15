@@ -62,30 +62,18 @@ window.PORTFOLIO.caseStudies.fitlog = {
     {
       type: "flow",
       id: "architecture",
-      heading: { ko: "엔진 두 개, 규칙 한 장", en: "Two engines, one rulebook" },
-      intro: {
-        ko: "정답이 하나인 것(사이즈 결정 순서, 예산, 기온별 옷차림, 가격 비교)은 코드와 규칙으로 고정하고, 답이 여럿인 가장자리(페이지 읽기, 코디, 설명)만 AI에게 맡겼어요.",
-        en: "Anything with one right answer (size order, budget, what to wear at which temperature, price comparison) is fixed in code and rules. The model only gets the edges with many answers: reading pages, outfits, explanations."
-      },
+      heading: { ko: "에이전트 팀과 규칙 한 장", en: "An agent team, one rulebook" },
       lanes: [
         {
           name: { ko: "입력", en: "Input" },
           boxes: [{ ko: "상품 링크 · 사진 · 상품명", en: "Product link, photo or name" }]
         },
         {
-          name: { ko: "내 계정: 에이전트 팀", en: "My account: agent team" },
+          name: { ko: "에이전트 팀", en: "Agent team" },
           boxes: [
             { ko: "총괄 (Opus) · 일을 나누고 기록", en: "Lead (Opus): splits work, writes results" },
             { ko: "가격 · 대안 (Haiku)", en: "Price, alternatives (Haiku)" },
             { ko: "핏 · 코디 · 추천 · 리서치 (Sonnet)", en: "Fit, outfits, picks, research (Sonnet)" }
-          ]
-        },
-        {
-          name: { ko: "친구 계정: 서버 엔진", en: "Friends: server engine" },
-          boxes: [
-            { ko: "Vercel 함수 + Gemini 무료 등급", en: "Vercel functions + Gemini free tier" },
-            { ko: "OpenRouter + Tavily (비슷한 옷)", en: "OpenRouter + Tavily (similar items)" },
-            { ko: "사람별 · 하루 한도", en: "Per-person, per-day limits" }
           ]
         },
         {
