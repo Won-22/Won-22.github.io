@@ -50,10 +50,6 @@ window.PORTFOLIO.caseStudies.fitlog = {
       type: "timeline",
       id: "timeline",
       heading: { ko: "24일 동안 한 일", en: "Twenty-four days" },
-      intro: {
-        ko: "첫 업로드부터 배포는 하루 만에, 친구용 엔진은 사흘 만에 붙였어요. 그 뒤는 대부분 재고 고치는 시간이었어요.",
-        en: "The first deploy took a day and the friends' engine three. Most of the time after that went into measuring and fixing."
-      },
       steps: [
         { date: { ko: "10월 21일", en: "21 Oct" }, title: { ko: "문제 좁히기", en: "Scope" }, body: { ko: "후회 세 가지 정리, 사이즈·코디 두 기능으로 좁힘", en: "Three regrets written down, cut to size and outfits" } },
         { date: { ko: "10월 22일", en: "22 Oct" }, title: { ko: "첫 배포", en: "First deploy" }, body: { ko: "v0.1. 에이전트 지침, 판정 규칙 한 장, 앱 화면, Vercel 자동 배포", en: "v0.1: agent instructions, a one-page rulebook, the app, auto-deploy on Vercel" } },
