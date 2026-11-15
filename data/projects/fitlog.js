@@ -121,9 +121,9 @@ window.PORTFOLIO.caseStudies.fitlog = {
       id: "limits",
       heading: { ko: "아직 부족한 점", en: "What is still missing" },
       items: [
-        { title: { ko: "실사용자", en: "Real users" }, body: { ko: "저 말고 쓰는 사람이 아직 없어요. 친구 3명이 2주 쓰는 시험이 다음 단계예요.", en: "Nobody but me uses it yet. Three friends for two weeks is the next step." } },
-        { title: { ko: "표본의 편향", en: "Sample bias" }, body: { ko: "정답지가 제 옷장 18벌이라, 맞아서 남긴 옷만 있다는 편향이 있어요.", en: "The answer key is my own 18 garments: only clothes that fitted well enough to keep." } },
-        { title: { ko: "코드 작성", en: "Who wrote the code" }, body: { ko: "코드 대부분은 Claude Code 에이전트가 썼어요. 규칙과 평가를 정한 이유는 제가 설명할 수 있고, 코드도 한 파일씩 다시 읽으며 설명할 수 있게 만드는 중이에요.", en: "Claude Code agents wrote most of the code. I can explain why each rule and test exists, and I am working through the code file by file to explain it line by line." } }
+        { title: { ko: "실사용자", en: "Real users" } },
+        { title: { ko: "표본의 편향", en: "Sample bias" } },
+        { title: { ko: "코드 작성", en: "Who wrote the code" } }
       ]
     },
     {
