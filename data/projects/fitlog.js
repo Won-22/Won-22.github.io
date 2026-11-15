@@ -15,7 +15,7 @@ window.PORTFOLIO.caseStudies = window.PORTFOLIO.caseStudies || {};
 window.PORTFOLIO.caseStudies.fitlog = {
   title: { ko: "Fit Log 핏로그", en: "Fit Log" },
   lede: {
-    ko: "옷을 사기 전에 묻는 쇼핑 판정 앱. 링크 하나로 최저가, 내 옷 기준 사이즈, 코디, 날씨를 한 화면에 판정합니다.",
+    ko: "옷을 사기 전에 묻는 쇼핑 판정 앱. 링크 하나로 최저가, 내 옷 기준 사이즈, 코디, 날씨를 한 화면에 판정합니다.",
     en: "A shopping verdict app you ask before you buy. One link gets you the lowest price, the size that matches your own clothes, outfits and weather on one screen."
   },
   facts: [

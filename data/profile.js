@@ -8,7 +8,6 @@ window.PORTFOLIO.profile = {
   // 가운데에 크게 들어가는 이름. 영문 3~8글자가 가장 보기 좋아요.
   wordmark: "Won",
   name: { ko: "원", en: "Won" },
-  role: { ko: "FDE 지망 개발자", en: "Aspiring Forward Deployed Engineer" },
   location: { ko: "대전", en: "Daejeon, Korea" },
 
   // 첫 화면 왼쪽 위 한 문장
@@ -18,7 +17,7 @@ window.PORTFOLIO.profile = {
   },
 
   // 연락처. 비워 두면 그 줄이 숨겨져요.
-  email: "qntkruruqjs@gmail.com",
+  email: "",
   github: "https://github.com/Won-22",
   links: [
     // { label: { ko: "블로그", en: "Blog" }, url: "https://..." }
