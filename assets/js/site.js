@@ -245,12 +245,6 @@
       var shot = el("figure", { class: "hero-shot" }, [el("img", { src: "assets/img/real/home.jpg", alt: t({ ko: "Fit Log 홈 화면", en: "Fit Log home screen" }) })]);
       hero.appendChild(shot);
     }
-    var bottom = el("div", { class: "hero-bottom" });
-    var bnav = el("nav", { "aria-label": "Sections" }, [
-      linkEl(t(UI.work), "#work"), linkEl(t(UI.how), "#how"), linkEl(t(UI.contact), "#contact")
-    ]);
-    bottom.appendChild(bnav);
-    hero.appendChild(bottom);
     main.appendChild(hero);
 
     // 계단 문장
@@ -492,11 +486,11 @@
       if (s.agentNote) sec.appendChild(rise(el("p", { class: "agent-note", text: t(s.agentNote) }), 0));
     } else if (s.type === "points") {
       var pts = el("div", { class: "points" });
-      s.items.forEach(function (it, i) { pts.appendChild(rise(el("div", {}, [el("h3", { text: t(it.title) }), el("p", { text: t(it.body) })]), i)); });
+      s.items.forEach(function (it, i) { var kids = [el("h3", { text: t(it.title) })]; if (it.body) kids.push(el("p", { text: t(it.body) })); pts.appendChild(rise(el("div", {}, kids), i)); });
       sec.appendChild(pts);
     } else if (s.type === "gallery") {
       var g = el("div", { class: "gallery" });
-      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), loading: "lazy" }), el("figcaption", { text: t(im.alt) })]), i)); });
+      s.images.forEach(function (im, i) { g.appendChild(rise(el("figure", {}, [el("img", { src: im.src, alt: t(im.alt), loading: "lazy" })]), i)); });
       sec.appendChild(g);
       if (s.note) sec.appendChild(el("p", { class: "gallery-note", text: t(s.note) }));
     }

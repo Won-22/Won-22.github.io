@@ -79,9 +79,9 @@ window.PORTFOLIO.caseStudies.fitlog = {
         {
           name: { ko: "공통", en: "Shared" },
           boxes: [
-            { ko: "판정 규칙 한 장 (모든 에이전트가 먼저 읽음)", en: "One rulebook every agent reads first" },
-            { ko: "MCP 서버: 도구 7개, 지우는 도구 없음", en: "MCP server: 7 tools, none that delete" },
-            { ko: "Supabase (본인 줄만 읽고 쓰기, RLS)", en: "Supabase with row-level security" }
+            { ko: "판정 규칙 한 장", en: "One rulebook" },
+            { ko: "MCP 서버: 도구 7개", en: "MCP server: 7 tools" },
+            { ko: "Supabase", en: "Supabase" }
           ]
         }
       ]
@@ -110,10 +110,10 @@ window.PORTFOLIO.caseStudies.fitlog = {
       id: "decisions",
       heading: { ko: "이렇게 정했고, 이건 뺐어요", en: "Decisions and cuts" },
       items: [
-        { title: { ko: "출처 없는 정보는 보여 주지 않아요", en: "No source, no claim" }, body: { ko: "링크 없는 가격·상품·사진은 넣지 않고 \"확인 필요\"나 \"찾지 못함: 이유\"로 적어요.", en: "Prices, products or photos without a link are left out and marked 'needs checking' or 'not found: reason'." } },
-        { title: { ko: "외부 AI에는 필요한 것만", en: "Send the model only what it needs" }, body: { ko: "제 계정과 MCP 서버는 Gemini에 상품 주소와 고정 질문만 보내요. 친구 엔진은 동의를 받고 판정에 필요한 체형 숫자만 보내요.", en: "My account and the MCP server send Gemini only the product URL and a fixed question. The friends' engine sends body measurements only, with consent." } },
-        { title: { ko: "결과를 흔드는 곳은 뺐어요", en: "Removed what made results unstable" }, body: { ko: "같은 상품을 두 번 조사하면 종합몰 최저가가 결과를 가장 많이 흔들었어요. 옷은 무신사, 신발은 크림을 먼저 보게 고정했어요.", en: "Running the same product twice, general marketplaces caused most of the drift. Clothing now checks one fashion store first, shoes one sneaker store." } },
-        { title: { ko: "\"사지 마세요\"도 정답이에요", en: "'Don't buy it' is a valid answer" }, body: { ko: "쇼핑몰이 아니라서, 안 맞거나 비슷한 옷이 이미 있으면 그렇게 말해요.", en: "It is not a shop, so when it won't fit or you own something similar, it says so." } }
+        { title: { ko: "출처 없는 정보는 보여 주지 않아요", en: "No source, no claim" } },
+        { title: { ko: "외부 AI에는 필요한 것만", en: "Send the model only what it needs" } },
+        { title: { ko: "같은 질문엔 같은 답이 나오게", en: "Same question, same answer" } },
+        { title: { ko: "\"사지 마세요\"도 정답이에요", en: "'Don't buy it' is a valid answer" } }
       ]
     },
     {
@@ -121,16 +121,15 @@ window.PORTFOLIO.caseStudies.fitlog = {
       id: "limits",
       heading: { ko: "아직 부족한 점", en: "What is still missing" },
       items: [
-        { title: { ko: "실사용자", en: "Real users" }, body: { ko: "저 말고 쓰는 사람이 아직 없어요. 친구 3명이 2주 쓰는 시험이 다음 단계예요.", en: "Nobody but me uses it yet. Three friends for two weeks is the next step." } },
-        { title: { ko: "표본의 편향", en: "Sample bias" }, body: { ko: "정답지가 제 옷장 18벌이라, 맞아서 남긴 옷만 있다는 편향이 있어요.", en: "The answer key is my own 18 garments: only clothes that fitted well enough to keep." } },
-        { title: { ko: "코드 작성", en: "Who wrote the code" }, body: { ko: "코드 대부분은 Claude Code 에이전트가 썼어요. 규칙과 평가를 정한 이유는 제가 설명할 수 있고, 코드도 한 파일씩 다시 읽으며 설명할 수 있게 만드는 중이에요.", en: "Claude Code agents wrote most of the code. I can explain why each rule and test exists, and I am working through the code file by file to explain it line by line." } }
+        { title: { ko: "실사용자", en: "Real users" } },
+        { title: { ko: "표본의 편향", en: "Sample bias" } },
+        { title: { ko: "코드 작성", en: "Who wrote the code" } }
       ]
     },
     {
       type: "gallery",
       id: "screens",
       heading: { ko: "실제 앱 화면", en: "The real app" },
-      note: { ko: "제가 실제로 쓰는 계정의 화면이에요. 쇼핑몰 상품 사진과 체형 숫자는 흐리게 처리했어요.", en: "Screens from my own account. Store product photos and body numbers are blurred." },
       images: [
         { src: "assets/img/real/home.jpg", alt: { ko: "홈: 링크를 넣거나 기준을 골라 추천받기", en: "Home: paste a link or pick a way to get picks" } },
         { src: "assets/img/real/verdict.jpg", alt: { ko: "판정: 가격 2곳, 예산, 오늘 날씨", en: "Verdict: two prices, budget, today's weather" } },
